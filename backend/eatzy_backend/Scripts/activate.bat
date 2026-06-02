@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=E:\Projects\Eatzy\eatzy\backend\eatzy_backend
+set VIRTUAL_ENV=E:\Projects\eatzy\backend\eatzy_backend
 
 if not defined PROMPT set PROMPT=$P$G
 

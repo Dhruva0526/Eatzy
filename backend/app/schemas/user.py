@@ -22,8 +22,11 @@ class UserCreate(UserBase):
 # -------------------------
 # Response Schema
 # -------------------------
-class UserResponse(UserBase):
+class UserResponse(BaseModel):
     id: str
+    name: str
+    email: Optional[str] = None
+    phone: str
 
     class Config:
         from_attributes = True
@@ -33,5 +36,5 @@ class UserResponse(UserBase):
 # Update Schema
 # -------------------------
 class UserUpdate(BaseModel):
-    name: Optional[str] = None
-    phone: Optional[str] = None
+    name: str | None = None
+    email: str | None = None

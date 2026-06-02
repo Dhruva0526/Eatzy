@@ -1,7 +1,13 @@
-# app/models/__init__.py
-
 from .user import User
+from .otp import OTP
+from .restaurant_merchant import RestaurantMerchant
 from .restaurant import Restaurant
-from .menu import MenuItem
+from .menu_item import MenuItem
 from .order import Order
 from .order_item import OrderItem
+from .cart import Cart
+from .favorite import Favorite
+from .address import Address
+from .table_booking import TableBooking
+from .table_booking_settings import TableBookingSettings
+from .blackout_date import BlackoutDate
